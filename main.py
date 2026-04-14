@@ -23,7 +23,7 @@ class MyPlugin(Star):
         """当消息中包含“河南音击”但不以“/”开头时触发"""
         msg= event.message_str.strip() # 去除消息两端的空白字符
         commands={"河南音击", "河南音擊" }
-        if msg in commands:
+        if msg in commands and event.message_str.startswith("/"):
             yield event.image_result(f"data/plugins/{self.name}/image/{str(randint(1, 44))}.jpg")
 
     async def terminate(self):
