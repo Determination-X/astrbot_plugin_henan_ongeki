@@ -1,10 +1,11 @@
-from astrbot.api.event import filter, AstrMessageEvent
-from astrbot.api.star import Context, Star, register
 from random import randint
 
+from astrbot.api.event import AstrMessageEvent, filter
+from astrbot.api.star import Context, Star, register
 from astrbot.core.star.filter.event_message_type import EventMessageType
 
-@register("helloworld", "YourName", "一个简单的 Hello World 插件", "1.0.0")
+
+@register("astrbot_plugin_henan_ongeki", "诶嘿怪awa", "一个简单的河南音击插件", "1.0.0")
 class MyPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
@@ -16,7 +17,7 @@ class MyPlugin(Star):
     async def hello(self, event: AstrMessageEvent):
         """随机河南音击"""
         yield event.image_result(f"data/plugin_data/henan_ongeki/images/{str(randint(1, 44))}.jpg")
-    
+
     @filter.event_message_type(EventMessageType.ALL)
     async def henan_ongeki_no_slash(self, event: AstrMessageEvent):
         """当消息中包含“河南音击”但不以“/”开头时触发"""
