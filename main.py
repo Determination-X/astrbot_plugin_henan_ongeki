@@ -16,7 +16,7 @@ class MyPlugin(Star):
     @filter.command("河南音击", alias={"河南音擊"})
     async def hello(self, event: AstrMessageEvent):
         """随机河南音击"""
-        yield event.image_result(f"data/plugin_data/henan_ongeki/images/{str(randint(1, 44))}.jpg")
+        yield event.image_result(f"data/plugins/{self.name}/images/{str(randint(1, 44))}.jpg")
 
     @filter.event_message_type(EventMessageType.ALL)
     async def henan_ongeki_no_slash(self, event: AstrMessageEvent):
@@ -24,7 +24,7 @@ class MyPlugin(Star):
         msg= event.message_str.strip() # 去除消息两端的空白字符
         commands={"河南音击", "河南音擊" }
         if msg in commands:
-            yield event.image_result(f"data/plugin_data/henan_ongeki/images/{str(randint(1, 44))}.jpg")
+            yield event.image_result(f"data/plugins/{self.name}/images/{str(randint(1, 44))}.jpg")
 
     async def terminate(self):
         """可选择实现异步的插件销毁方法，当插件被卸载/停用时会调用。"""
