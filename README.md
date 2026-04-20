@@ -11,9 +11,8 @@ AstrBot 河南音击插件
 
 ## 安装
 
-1. 将 `astrbot_plugin_henan_ongeki` 目录放入 AstrBot 的 `data/plugins/` 下。
-或
-启动 AstrBot WebUI，在插件管理页面中使用repo链接`https://github.com/Determination-X/astrbot_plugin_henan_ongeki.git`来安装
+- 将 `astrbot_plugin_henan_ongeki` 目录放入 AstrBot 的 `data/plugins/` 下。
+- 或启动 AstrBot WebUI，在插件管理页面中使用repo链接`https://github.com/Determination-X/astrbot_plugin_henan_ongeki.git`来安装
 
 ## 使用
 
