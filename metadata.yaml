@@ -3,4 +3,4 @@ display_name: 河南音击 # 用于展示的名字，可以是方便人类阅读
 desc: AstrBot 河南音击插件。 # 插件简短描述
 version: v1.3.0 # 插件版本号。格式：v1.1.1 或者 v1.1
 author: 诶嘿怪awa # 作者
-repo: https://github.com/Determination-X/astrbot-plugin-henan-ongeki # 插件的仓库地址
+repo: https://github.com/Determination-X/astrbot_plugin_henan_ongeki # 插件的仓库地址
